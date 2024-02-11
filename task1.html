@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <link rel="icon" type="png"  href="https://cdn-icons-png.flaticon.com/512/732/732212.png">
+</head>
+
+<style>
+
+    body{
+        background-image: url(https://preview.redd.it/clean-black-wallpaper-1920x1080-v0-3764zpt69h891.jpg?width=1080&crop=smart&auto=webp&s=593e47425f2e47fdabb4a4672d1ccb568ee1a954);
+
+            background-size: cover;
+           
+
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background: linear-gradient(34deg, rgb(0, 0, 0) 50%, rgb(56, 56, 56) 100%);
+        border-radius: 10px;
+        height: 60px;
+        
+    }
+
+    
+
+    a{
+        text-decoration: none;
+        color: white;
+        padding: 30px;
+        margin: 30px;
+        
+    }
+
+    h2{
+        color: white;
+        text-align: left;
+        font-size: 30px;
+        font-family: "Lucida Handwriting", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+
+
+        
+    }
+
+    .loginbtn{
+      
+        background: linear-gradient(34deg, rgb(0, 0, 0) 50%, rgb(56, 56, 56) 100%);
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+       
+    }
+
+
+    footer{
+        background: linear-gradient(34deg, rgb(0, 0, 0) 50%, rgb(56, 56, 56) 100%);
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+      
+        
+    }
+
+    .footpara{
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .icon{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+        
+       
+
+
+        
+        
+
+    }
+
+    .foottext{
+        color: white;
+        text-align: left;
+        font-size: 40px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        font-family: 'Roboto', sans-serif;
+        padding: 10px;
+        margin: 10px;
+    }
+
+
+    a:link {
+      text-decoration: none;
+      color: white;
+      padding: 30px;
+      margin: 30px; 
+    }
+
+    a:visited { 
+      color: lightgray; 
+    }
+
+    a:hover { 
+      color: rgb(129, 119, 119); 
+      text-decoration: underline; 
+    }
+
+    a:active {  
+      color: white;  
+      background-color: rgb(0, 0, 0);  
+      border-radius: 10px;  
+    }
+
+    .mainhead{
+        color: white;
+        text-align: left;
+        font-size: 30px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        font-family: "Lucida Handwriting", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+
+    .listdiv{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .navbarcontext{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: left;
+        padding: 10px;
+        margin: 10px;
+        font-size: 20px;
+
+    }
+
+    .navbarcontext a {
+
+        text-decoration: none;
+        padding: 10px; 
+        margin: 0; 
+        
+      }
+
+    .icon a:hover img {
+        filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8)); 
+      }
+    
+    
+      .bugsdiv {
+        display: flex;        
+        align-items: flex-start; 
+        position: relative;      
+        margin-top: 50px;      
+      }
+    
+      .bugsh1 {
+        color: white;       
+        font-size: 48px;
+        font-weight: 600;
+        position: absolute; 
+        left: 80px;        
+      
+      }
+
+      
+      .bugs { 
+        background-color: rgba(0, 0, 0, 0.7); 
+        color: white;
+        padding: 20px; 
+        margin-left: 30px; 
+        border-radius: 10px; 
+        width: 50%;       
+        margin: auto;
+      }
+
+      .bugsa {
+        position: relative;
+        display: block;     
+        margin: 0 auto;     
+      }
+
+        .bugsimage {
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); 
+            margin-top: 50px;;
+        }
+
+        .duffydiv {
+            display: flex;          
+            align-items: flex-start; 
+            position: relative;      
+            margin-top: 50px;      
+          }
+        
+          .duffyh1 {
+            color: white;       
+            font-size: 48px;
+            font-weight: 600;
+            position: absolute; 
+            left: 1000px;        
+          
+          }
+    
+          
+          .duffy { 
+            background-color: rgba(0, 0, 0, 0.7); 
+            color: white;
+            padding: 20px; 
+            margin-left: 30px; 
+            border-radius: 10px; 
+            width: 50%;        
+            margin: auto;
+          }
+    
+          .duffya {
+            position: relative; 
+            display: block;     
+            margin: 0 auto;     
+          }
+    
+            .duffyimage {
+                border-radius: 10px; 
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); 
+                margin-top: 50px;;
+            }
+      
+
+            .loladiv {
+                display: flex;           
+                align-items: flex-start; 
+                position: relative;      
+                margin-top: 50px;      
+              }
+            
+              .lolah1 {
+                color: white;       
+                font-size: 48px;
+                font-weight: 600;
+                position: absolute; 
+
+                left: 80px;         
+                 
+              }
+        
+              
+              .lola { 
+                background-color: rgba(0, 0, 0, 0.7); 
+                color: white;
+                padding: 20px; 
+                margin-left: 30px; 
+                border-radius: 10px; 
+                width: 50%;        
+                margin: auto;
+              }
+        
+              .lolaa {
+                position: relative; 
+                display: block;     
+                margin: 0 auto;     
+              }
+        
+                .lolaimage {
+                    border-radius: 10px; 
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); 
+                    margin-top: 50px;;
+                }
+
+                .footnavpara{
+                    display: inline-flex;
+                    width: 800px;
+                    align-items: right;
+                    padding: 10px;
+                    margin: 10px;
+                    font-size: 20px;
+                    text-align: center;
+                    
+                    margin-left: 300px;
+
+                  
+                    background: rgba(0, 0, 0, 0.5);
+                    backdrop-filter: blur(5px);
+                    border-radius: 10px;
+                    padding: 20px;
+
+
+                }
+
+                .footpara2{
+                    color: white;
+                    text-align: center;
+                    font-size: 20px;
+                    font-family: 'Roboto', sans-serif;
+                }
+
+                .loonay{
+                    color: white;
+                    text-align: center;
+                    font-size: 30px;
+                    font-family: 'Roboto', sans-serif;
+                }
+
+                
+
+
+                
+                .icon a { 
+                    display: inline-block; 
+                    padding-bottom: 5px;   
+                    border-bottom: 2px solid #ccc; 
+                }
+                
+
+
+    
+</style>
+ 
+<body>
+    <nav class="navbar">
+        <a href="none.html">
+        <img src="https://freepngimg.com/save/117606-bugs-bunny-png-file-hd/1024x1660" alt="logo" width="75" height="80">
+        </a>
+        <h2 class="mainhead">Pizzaizer</h2>
+        <div class="listdiv">
+            <a href="none.html" id="l1">Home</a>
+            <a href="none.html">About</a>
+            <a href="none.html">Contact</a>
+            <a href="none.html">Services</a>
+        </div>
+        <input type="button" value="Order" id="login" class="loginbtn" onclick="window.location.href='none.html'">
+        
+    </nav>
+
+
+    <div class="bugsdiv">
+        <h1 class="bugsh1">
+            Special Pizza
+        </h1>
+        
+        <a href="none.html" class="bugsa">
+            <img src="https://img.freepik.com/free-photo/freshly-italian-pizza-with-mozzarella-cheese-slice-generative-ai_188544-12347.jpg" alt="Bugs" width="300" height="300" class="bugsimage">
+        </a>
+        <p class="bugs">
+            The ultimate edible chameleon! It starts with a humble foundation of dough –  sometimes thin and crispy like a cracker, other times thick and fluffy like a cloud. Next comes the saucy swirl, a splash of tomato-based brilliance that sets the stage for flavor. Molten cheese takes center stage, a stretchy, gooey star that oozes with deliciousness. Toppings are the supporting cast, adding personality and pizzazz – spicy pepperoni, zesty sausage, vibrant veggies, or maybe something totally unexpected! Pizza is a choose-your-own-adventure of flavor, a dish designed to bring a smile to your face and a rumble to your happy belly. </p>
+    </div>
+
+
+
+
+    <div class="duffydiv">
+        <p class="duffy">
+            A culinary chameleon, capable of endless transformations to suit any palate.  The foundation is simple – a canvas of dough, baked to a golden perfection, its texture ranging from airy and crisp to satisfyingly chewy. Upon this base, a vibrant tomato sauce adds a touch of sweetness and acidity. Molten cheese stretches and bubbles, adding irresistible richness. From there, the possibilities are infinite. Classic pepperoni delivers salty, savory goodness, while fresh vegetables lend brightness and crunch. Spicy sausage brings the heat, and exotic toppings like pineapple or gourmet mushrooms create unforgettable flavor adventures. Whether a humble cheese slice or an extravagantly loaded pie, pizza is a dish that celebrates both simplicity and boundless creativity.  </p>
+        <a href="none.html" class="duffya">
+            <img src="https://www.simplyrecipes.com/thmb/pjYMLcsKHkr8D8tYixmaFNxppPw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-3-8f256746d649404baa36a44d271329bc.jpg" alt="Duffy" width="300" height="300" class="duffyimage">
+        </a>
+        <h1 class="duffyh1">
+            Casual Pizza
+        </h1>
+
+    </div>
+
+
+    <div class="loladiv">
+        <h1 class="lolah1">
+            Square Pizza
+        </h1>
+        
+        <a href="none.html" class="lolaa">
+            <img src="https://www.eatingwell.com/thmb/PhRj8Sp6g5m-Cn9AJL2zeLi1LM4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/easy-vegan-pizza-1x1-002-a224f13696b3483d8099b7ae5b494250.jpg" alt="Lola" width="300" height="300" class="lolaimage">
+        </a>
+        <p class="lola">
+            A symphony of textures and flavors that satisfies the soul. Imagine a warm, pliable crust, yielding slightly under your touch, with a hint of char from the oven's fiery embrace.  A vibrant splash of tomato sauce, sweet and tangy, awakens the senses. Melted mozzarella forms a gooey blanket, inviting you to pull apart steaming strands. Toppings dance across the surface – salty olives, crisp bell peppers, savory mushrooms – each bite a delicious surprise. Whether classic or contemporary, a shared pie or a personal indulgence, pizza is a dish that brings comfort, joy, and a taste of culinary magic to the table. </p>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <footer>
+        <h2 class="foottext">Pizzaizer</h2>
+
+        <div class="navbarcontext">
+            <a href="none.html">Home</a>
+            <a href="none.html">About</a>
+            <a href="none.html">Contact</a>
+            <a href="none.html">Services</a>
+            
+        </div>
+        
+        <div class="footnavpara">
+            
+            <p class="footpara2">
+                
+                <b>Pizzaizer</b> The best pizza in town – where fresh ingredients, handcrafted dough, and a whole lot of love come together in every bite.  Savor the aroma of herbs and spices mingling with the comforting scent of baked bread. Choose from our classic combinations or build your own masterpiece from a tempting array of toppings.
+
+            </p>
+        </div>
+        
+        <div class="icon" >
+          
+            <a class="insta" href="none.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" alt="instagram" width="50" height="50"></a>
+            <a href="none.html"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="facebook" width="50" height="50"></a>
+            <a href="none.html"><img src="https://cdn-icons-png.flaticon.com/512/733/733590.png" alt="instagram" width="50" height="50"></a>
+            <a href="none.html"><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png" alt="x" width="50" height="50"></a>
+        </div>
+        <div class="maincontent">
+            <p class="footpara">
+                Pizzaizer is a website that provides you best pizza in town.
+            </p>
+        </div>
+        <p class="footpara">&copy; 2024 Pizzaizer. All rights reserved.</p>
+       
+    </footer>
+    
+</body>
+</html>
